@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Case Studies | DO-GEN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: radial-gradient(circle at top left, rgba(0, 242, 255, 0.05), transparent 60%);
+            text-align: center;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-header {
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .project-industry {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .project-details {
+            flex-grow: 1;
+        }
+
+        .detail-item {
+            margin-bottom: 15px;
+        }
+
+        .detail-label {
+            color: var(--text-white);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--text-white);
+        }
+
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">DO-<span>GEN</span></a>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services/ai-automation.html">Services</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding: 8px 20px;">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="animate-up">Our <span class="text-gradient">Projects</span></h1>
+            <p class="animate-up" style="max-width: 600px; margin: 20px auto; font-size: 1.1rem;">
+                Real-world success stories of AI driving business transformation.
+            </p>
+        </div>
+    </header>
+
+    <!-- Projects List -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <article class="glass-card project-card animate-up">
+                    <div class="project-header">
+                        <div class="project-industry">Retail & E-commerce</div>
+                        <h3>AI Sales Forecasting Platform</h3>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Problem</span>
+                            <p>Inaccurate inventory planning leading to stockouts and overstock.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Solution</span>
+                            <p>Developed a time-series forecasting model integrating historical sales, seasonality, and
+                                marketing data.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Outcome</span>
+                            <p style="color: var(--secondary);">Reduced inventory costs by 22% and increased
+                                availability by 15%.</p>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="glass-card project-card animate-up">
+                    <div class="project-header">
+                        <div class="project-industry">Healthcare</div>
+                        <h3>Smart Healthcare Analytics System</h3>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Problem</span>
+                            <p>Delayed patient risk assessment due to fragmented data sources.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Solution</span>
+                            <p>Unified data lake implementation with NLP to analyse unstructured clinical notes.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Outcome</span>
+                            <p style="color: var(--secondary);">Improved early diagnosis rates by 30% through predictive
+                                scoring.</p>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Apache Spark</span>
+                        <span class="tech-tag">Tableau</span>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="glass-card project-card animate-up">
+                    <div class="project-header">
+                        <div class="project-industry">Finance & Banking</div>
+                        <h3>Intelligent Document Processing Engine</h3>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Problem</span>
+                            <p>Manual loan application processing was slow and error-prone.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Solution</span>
+                            <p>Optical Character Recognition (OCR) pipeline with entity extraction for automated data
+                                entry.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Outcome</span>
+                            <p style="color: var(--secondary);">Reduced processing time by 85% and operational costs by
+                                40%.</p>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="glass-card project-card animate-up">
+                    <div class="project-header">
+                        <div class="project-industry">Manufacturing</div>
+                        <h3>Predictive Maintenance AI</h3>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Problem</span>
+                            <p>Unexpected machinery breakdowns causing costly production downtime.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Solution</span>
+                            <p>IoT sensor data analysis to predict equipment failure before it happens.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Outcome</span>
+                            <p style="color: var(--secondary);">Decreased downtime by 25% and extended equipment
+                                lifespan.</p>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Azure</span>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="glass-card project-card animate-up">
+                    <div class="project-header">
+                        <div class="project-industry">Retail & Marketing</div>
+                        <h3>Customer Behavior Intelligence Platform</h3>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Problem</span>
+                            <p>Generic marketing campaigns resulting in low conversion rates.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Solution</span>
+                            <p>Clustering algorithms to segment customers and personalize recommendations.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Outcome</span>
+                            <p style="color: var(--secondary);">Boosted conversion rates by 18% and customer retention
+                                by 12%.</p>
+                        </div>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">BigQuery</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">DO-<span>GEN</span></a>
+                    <p style="margin-top: 20px;">Powering the Future with Intelligent Data & AI.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/ai-automation.html">AI & Automation</a></li>
+                        <li><a href="services/data-science.html">Data Science</a></li>
+                        <li><a href="services/intelligent-platforms.html">Intelligent Platforms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@do-gen.in</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Salem, Tamil Nadu, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DO-GEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

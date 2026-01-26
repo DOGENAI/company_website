@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science & Analytics | DO-GEN Services</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .service-hero {
+            padding: 180px 0 100px;
+            background: radial-gradient(circle at top left, rgba(189, 0, 255, 0.1), transparent 50%);
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .feature-list li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li i {
+            color: var(--secondary);
+            margin-right: 15px;
+            font-size: 1.2rem;
+            background: rgba(189, 0, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-cta {
+            background: linear-gradient(90deg, rgba(0, 242, 255, 0.05), rgba(189, 0, 255, 0.05));
+            border-radius: 16px;
+            padding: 60px;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">DO-<span>GEN</span></a>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="ai-automation.html" class="active">Services</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../contact.html" class="btn btn-primary" style="padding: 8px 20px;">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                <div class="animate-up">
+                    <h1 style="margin-bottom: 20px;">Data Science & <span class="text-gradient"
+                            style="background: linear-gradient(to right, var(--secondary), var(--primary)); -webkit-background-clip: text;">Analytics</span>
+                    </h1>
+                    <p style="font-size: 1.2rem; margin-bottom: 30px;">
+                        Unlock the power of your data with advanced predictive analytics, business intelligence, and
+                        scalable engineering pipelines.
+                    </p>
+                    <a href="#details" class="btn btn-primary">Discover More</a>
+                </div>
+                <div class="glass-card animate-up"
+                    style="height: 300px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-chart-pie" style="font-size: 8rem; color: rgba(255, 255, 255, 0.05);"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details -->
+    <section id="details" class="section">
+        <div class="container">
+            <h2 class="mb-5 animate-up">What We Offer</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+                <div class="glass-card animate-up">
+                    <h3 style="color: var(--secondary);">Predictive Analytics</h3>
+                    <p>Forecast trends, demand, and customer behavior with high accuracy using state-of-the-art machine
+                        learning models.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Sales forecasting</li>
+                        <li><i class="fas fa-check"></i> Risk assessment</li>
+                        <li><i class="fas fa-check"></i> Churn prediction</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card animate-up">
+                    <h3 style="color: var(--primary);">Business Intelligence</h3>
+                    <p>Transform raw data into interactive, real-time dashboards that provide stakeholders with
+                        actionable insights at a glance.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Custom dashboards (Tableau, PowerBI)</li>
+                        <li><i class="fas fa-check"></i> Real-time reporting</li>
+                        <li><i class="fas fa-check"></i> KPI tracking</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card animate-up">
+                    <h3 style="color: var(--secondary);">Data Engineering Pipelines</h3>
+                    <p>Build robust, scalable data pipelines (ETL/ELT) to ensure your data is clean, accessible, and
+                        ready for analysis.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Cloud data warehousing</li>
+                        <li><i class="fas fa-check"></i> Real-time streaming</li>
+                        <li><i class="fas fa-check"></i> Data quality assurance</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="service-cta animate-up">
+                <h2>Turn your data into your biggest asset</h2>
+                <p style="margin: 20px 0 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Stop guessing and start knowing. Let's build your data strategy today.
+                </p>
+                <a href="../contact.html" class="btn btn-primary">Start a Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../index.html" class="logo">DO-<span>GEN</span></a>
+                    <p style="margin-top: 20px;">Powering the Future with Intelligent Data & AI.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../projects.html">Projects</a></li>
+                        <li><a href="../team.html">Team</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="ai-automation.html">AI & Automation</a></li>
+                        <li><a href="data-science.html">Data Science</a></li>
+                        <li><a href="intelligent-platforms.html">Intelligent Platforms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@do-gen.in</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Salem, Tamil Nadu, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DO-GEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
